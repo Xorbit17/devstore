@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <ImageView
+        android:id="@+id/detailimageview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/shoppingbasket"/>
+    <TextView
+        android:id="@+id/detailproductname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:text="Product name "
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/detaildescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fadeScrollbars="true"
+            android:isScrollContainer="true"
+            android:scrollIndicators="left"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:text="Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. Long explanation. " />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailprice"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="100,00 €"
+                android:textAlignment="viewEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/detailbuybutton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:background="@drawable/roundedbutton"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/addshopping" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
